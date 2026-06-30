@@ -1,0 +1,10 @@
+/* App-level reset — page transitions handled via index.css animations */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
