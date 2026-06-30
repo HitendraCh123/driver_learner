@@ -292,7 +292,7 @@
 
 /* ---- POPULAR TOPICS ---- */
 .popular-section {
-  padding: 90px 0;
+  padding: 50px 0;
   background: var(--white);
 }
 
@@ -365,7 +365,7 @@
 
 /* ---- ALL DRIVERS GRID ---- */
 .all-drivers-section {
-  padding: 90px 0;
+  padding: 50px 0;
   background: var(--light);
 }
 
@@ -428,7 +428,7 @@
 
 /* ---- STATS / ABOUT ---- */
 .stats-section {
-  padding: 90px 0;
+  padding: 50px 0;
   background: var(--white);
 }
 
@@ -524,7 +524,7 @@
 
 /* ---- FAQ ---- */
 .faq-section {
-  padding: 90px 0;
+  padding: 50px 0;
   background: var(--light);
 }
 
@@ -623,7 +623,7 @@
 
 /* ---- FEATURED DRIVERS ---- */
 .featured-section {
-  padding: 90px 0;
+  padding: 50px 0;
   background: var(--white);
 }
 
@@ -728,7 +728,7 @@
 
 /* ---- BLOG ---- */
 .blog-section {
-  padding: 90px 0;
+  padding: 50px 0;
   background: var(--light);
 }
 
@@ -834,7 +834,7 @@
 
 /* ---- CTA SECTION ---- */
 .cta-section {
-  padding: 60px 0 90px;
+  padding: 40px 0 50px;
   background: var(--white);
 }
 
@@ -930,10 +930,11 @@
 
 @media (max-width: 768px) {
   .hero-section {
-    padding: 60px 0 50px;
+    padding: 50px 20 50px;
   }
 
   .hero-inner {
+    padding: 0px 20px;
     flex-direction: column;
     gap: 40px;
   }
@@ -1013,6 +1014,6 @@
   }
 
   .hero-buttons {
-    flex-direction: column;
+    flex-direction: row;
   }
 }

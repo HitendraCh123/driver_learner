@@ -40,16 +40,6 @@ function DriverDetail() {
   return (
     <main className="detail-page">
 
-      {/* ── BREADCRUMB ── */}
-      {/* <div className="detail-breadcrumb">
-        <div className="container detail-breadcrumb-inner">
-          <Link to="/">Home</Link>
-          <span className="breadcrumb-sep">›</span>
-          <Link to="/driver-topics">Driver Topics</Link>
-          <span className="breadcrumb-sep">›</span>
-          <span className="breadcrumb-current">{driver.title}</span>
-        </div>
-      </div> */}
 
       {/* ── HERO ── */}
       <section className="detail-hero" style={{ '--accent-color': driver.color, '--accent-bg': driver.bgColor }}>

@@ -339,11 +339,11 @@
 }
 
 @media (max-width: 768px) {
-  .askus-main-section { padding: 60px 0; }
+  .askus-main-section { padding: 50px 0; }
   .askus-form { padding: 24px 20px; gap: 16px; }
   .form-row { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 480px) {
-  .askus-faq-section { padding: 60px 0; }
+  .askus-faq-section { padding: 40px 0; }
 }
