@@ -8,37 +8,37 @@ const values = [
     icon: FaBookOpen,
     color: '#2563eb',
     bg: '#eff6ff',
-    title: 'Educational First',
-    desc: 'Every guide is crafted for clarity. We focus on simple language that beginners can understand without prior technical knowledge.',
+    title: 'Simple and Clear',
+    desc: 'We skip the confusing tech talk and explain things using everyday words. Anyone can learn how computer parts work here, no tech background needed.',
   },
   {
     icon: FaLightbulb,
     color: '#d97706',
     bg: '#fffbeb',
-    title: 'Simple Explanations',
-    desc: 'We break down complex driver concepts into easy-to-understand explanations with real-world device examples.',
+    title: 'Real-World Examples',
+    desc: 'Code can feel boring without real-world examples. We connect the inner workings of computers to the actual devices you use every single day.',
   },
   {
     icon: FaShieldAlt,
     color: '#059669',
     bg: '#ecfdf5',
-    title: 'Organized Learning',
-    desc: 'Topics are organized by driver category so learners can navigate directly to what they need without confusion.',
+    title: 'Easy to Find',
+    desc: 'No more wasting hours searching through confusing online forums. Everything we write is put into organized groups so you can find your answer in seconds.',
   },
   {
     icon: FaUsers,
     color: '#7c3aed',
     bg: '#f5f3ff',
-    title: 'For Everyone',
-    desc: 'Whether you are a student, a home user, or just curious about how devices work, our content is built for you.',
+    title: 'Made for Everyone',
+    desc: 'Whether you are trying to fix a quick computer issue or you are just curious about how your machine works behind the scenes, this space is for you.',
   },
 ]
 
 const stats = [
-  { num: '14+', label: 'Driver Categories', sub: 'Explained clearly' },
-  { num: '10+', label: 'Device Types', sub: 'Covered in guides' },
-  { num: 'Easy', label: 'Learning Format', sub: 'Beginner friendly' },
-  { num: '100%', label: 'Educational', sub: 'No sales content' },
+  { num: '14+', label: 'Main Topics', sub: 'Easy-to-read guides' },
+  { num: '10+', label: 'Computer Parts', sub: 'From sound to storage' },
+  { num: '100%', label: 'Beginner Friendly', sub: 'No coding skills required' },
+  { num: 'Free', label: 'No Annoying Ads', sub: 'Just pure learning' },
 ]
 
 function About() {
@@ -53,16 +53,16 @@ function About() {
         <div className="page-hero-blob page-hero-blob-2" />
         <div className="container page-hero-inner">
           <span className="section-label" style={{ background: 'rgba(96,165,250,0.2)', color: '#93c5fd' }}>
-            About Us
+            Who We Are
           </span>
           <h1 className="page-hero-title">
-            Making driver education <br />
-            <span className="page-hero-highlight">simple for everyone</span>
+            Showing you how software <br />
+            <span className="page-hero-highlight">talks to your hardware</span>
           </h1>
           <p className="page-hero-desc">
-            Driver Learner is an educational platform built to explain how computer drivers work
-            behind everyday devices. Our guides focus on clear concepts, simple language, and
-            organized learning.
+            Driver Learner is a friendly learning space created to show you how device drivers work. 
+            We pull back the curtain on how your computer's main system talks to physical parts, 
+            offering simple, step-by-step guides for everyday learners.
           </p>
         </div>
       </section>
@@ -72,27 +72,27 @@ function About() {
         <div className="container">
           <div className="mission-grid">
             <div className="mission-left fade-left">
-              <span className="section-label">Our Mission</span>
-              <h2 className="section-title">Driver learning made simple for everyone</h2>
+              <span className="section-label">Our Purpose</span>
+              <h2 className="section-title">Making computer hardware easy for everyone</h2>
               <p className="section-desc">
-                Driver Learner is an educational platform built to explain how computer drivers work
-                behind everyday devices. Our guides focus on clear concepts, simple language, and
-                organized learning for users who want to understand device communication.
+                Every single part of your computer needs a "driver" to work properly. Unfortunately, 
+                finding a simple explanation about them can be really frustrating. Driver Learner solves 
+                this problem by breaking down how your everyday gadgets talk to your computer.
               </p>
               <p className="section-desc" style={{ marginTop: '16px' }}>
-                From printer and scanner drivers to audio, graphics, USB, Bluetooth, chipset, storage,
-                webcam, and network drivers, we help readers explore the basic role of each driver
-                without confusing technical terms.
+                We cover a wide variety of topics, including how printers and scanners print, how your 
+                sound and speakers work, screen and graphics updates, USB plug-ins, Bluetooth, storage 
+                drives, webcams, and internet connections—all without boring you with heavy manuals.
               </p>
               <Link to="/driver-topics" className="btn-primary" style={{ marginTop: '28px' }}>
-                Explore Driver Topics <FaArrowRight size={13} />
+                Explore Our Guides <FaArrowRight size={13} />
               </Link>
             </div>
             <div className="mission-right fade-right">
               <div className="mission-visual">
                 <div className="mission-blob" />
                 <div className="mission-card-grid">
-                  {['Printer', 'Audio', 'Graphics', 'Network', 'USB', 'Bluetooth'].map((item) => (
+                  {['Printers', 'Sound', 'Graphics', 'Internet', 'USB Plugs', 'Bluetooth'].map((item) => (
                     <div key={item} className="mission-mini-card">
                       <span>{item}</span>
                       <span className="mission-mini-badge">Guide</span>
@@ -124,11 +124,11 @@ function About() {
       <section className="values-section">
         <div className="container">
           <div className="section-header fade-in">
-            <span className="section-label">What We Stand For</span>
-            <h2 className="section-title">Our approach to driver education</h2>
+            <span className="section-label">Our Core Values</span>
+            <h2 className="section-title">How we like to teach tech</h2>
             <p className="section-desc">
-              We believe hardware knowledge should be accessible to everyone.
-              Here's how we make that happen.
+              We believe that understanding your computer shouldn't require a fancy college degree. 
+              Here is how we make learning tech simple and fun.
             </p>
           </div>
 
@@ -153,14 +153,14 @@ function About() {
       <section className="about-cta-section">
         <div className="container">
           <div className="about-cta-banner fade-in">
-            <h2>Ready to start learning?</h2>
-            <p>Browse all driver categories and start understanding how your devices communicate.</p>
+            <h2>Ready to see how your computer actually works?</h2>
+            <p>Take a look at our easy topics and learn how your computer parts speak to each other today.</p>
             <div className="about-cta-buttons">
               <Link to="/driver-topics" className="btn-primary">
-                Explore Driver Topics <FaArrowRight size={13} />
+                Browse All Topics <FaArrowRight size={13} />
               </Link>
               <Link to="/ask-us" className="about-ask-link">
-                Have a question? Ask us →
+                Have a question? Ask us here →
               </Link>
             </div>
           </div>

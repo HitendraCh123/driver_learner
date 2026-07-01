@@ -14,8 +14,8 @@ const allPosts = [
     categoryColor: '#7c3aed',
     categoryBg: '#f5f3ff',
     date: 'June 18, 2025',
-    title: 'What Happens When Audio Drivers Fail',
-    excerpt: 'Explore the common causes of audio driver failure and how they affect sound hardware communication in different operating systems.',
+    title: 'Decoding Sound Subsystem and Audio Driver Glitches',
+    excerpt: 'An analytical look into what triggers sound hardware communication breakdowns and how operating system layers respond to sudden audio stack failures.',
     readTime: '5 min read',
   },
   {
@@ -24,8 +24,8 @@ const allPosts = [
     categoryColor: '#047857',
     categoryBg: '#ecfdf5',
     date: 'June 15, 2025',
-    title: 'Understanding USB Driver Recognition',
-    excerpt: 'Learn why USB devices sometimes go unrecognized and how USB drivers manage communication between external devices and your PC.',
+    title: 'The Mechanics Behind Universal Serial Bus Handshakes',
+    excerpt: 'Demystifying the technical sequence behind device recognition failures and how host controllers manage data streams from external peripherals.',
     readTime: '4 min read',
   },
   {
@@ -34,8 +34,8 @@ const allPosts = [
     categoryColor: '#4338ca',
     categoryBg: '#eef2ff',
     date: 'June 12, 2025',
-    title: 'Bluetooth Driver Basics Explained',
-    excerpt: 'A simple guide to understanding how Bluetooth drivers manage wireless communication for headphones, keyboards, and other devices.',
+    title: 'Demystifying Wireless RF and Local Stack Management',
+    excerpt: 'A foundational guide explaining how low-level wireless protocols coordinate continuous connectivity for input peripherals and media endpoints.',
     readTime: '3 min read',
   },
   {
@@ -44,8 +44,8 @@ const allPosts = [
     categoryColor: '#9333ea',
     categoryBg: '#faf5ff',
     date: 'June 10, 2025',
-    title: 'How Storage Drivers Manage Your Data',
-    excerpt: 'Discover the role storage drivers play in managing SSDs, hard drives, and system storage controllers for reliable data access.',
+    title: 'How Controller Architecture Safeguards NVMe Data Flow',
+    excerpt: 'Uncovering the critical role system controllers play in translating read-write commands between operational storage media and kernel layers.',
     readTime: '6 min read',
   },
 ]
@@ -73,14 +73,14 @@ function Blog() {
         <div className="page-hero-blob page-hero-blob-2" />
         <div className="container page-hero-inner">
           <span className="section-label" style={{ background: 'rgba(96,165,250,0.2)', color: '#93c5fd' }}>
-            Educational Blog
+            Knowledge Base
           </span>
           <h1 className="page-hero-title">
-            Driver Insights <span className="page-hero-highlight">&amp; Ideas</span>
+            Architectural Insights <span className="page-hero-highlight">&amp; Deep Dives</span>
           </h1>
           <p className="page-hero-desc">
-            Simple articles about driver basics, hardware communication, and device learning topics.
-            Written for beginners and curious minds.
+            Explore technical breakdowns regarding hardware abstraction, low-level system protocols, 
+            and peripheral device interaction. Tailored for software enthusiasts and system learners.
           </p>
         </div>
       </section>
@@ -106,9 +106,9 @@ function Blog() {
 
           {filteredPosts.length === 0 ? (
             <div className="no-blog-results">
-              <p>No posts found in this category.</p>
+              <p>No educational entries matching this structural classification.</p>
               <button className="filter-btn active" onClick={() => setActiveCategory('All')}>
-                Show All Posts
+                Reset Filter Context
               </button>
             </div>
           ) : (
@@ -133,7 +133,7 @@ function Blog() {
                         <FaClock size={12} /> {featured.readTime}
                       </span>
                       <Link to="/blog" className="read-more-btn">
-                        Read Article <FaArrowRight size={12} />
+                        Examine Reference Module <FaArrowRight size={12} />
                       </Link>
                     </div>
                   </div>
@@ -146,8 +146,8 @@ function Blog() {
                       >
                         {featured.category}
                       </span>
-                      <h3>Driver Learning</h3>
-                      <p>Educational Resource</p>
+                      <h3>Systems Engineering</h3>
+                      <p>Technical Reference</p>
                     </div>
                   </div>
                 </div>
@@ -173,7 +173,7 @@ function Blog() {
                         <span className="post-read-time">
                           <FaClock size={11} /> {post.readTime}
                         </span>
-                        <span className="post-arrow">Read ↗</span>
+                        <span className="post-arrow">Analyze ↗</span>
                       </div>
                     </Link>
                   ))}
@@ -189,15 +189,15 @@ function Blog() {
         <div className="container">
           <div className="blog-cta-banner fade-in">
             <div className="blog-cta-text">
-              <span className="section-label">Have a question?</span>
-              <h2>Want to understand a driver topic better?</h2>
+              <span className="section-label">Technical Query Helpdesk</span>
+              <h2>Encountering a complex driver architecture hurdle?</h2>
               <p>
-                Ask us anything about computer drivers, hardware basics, or device communication —
-                we'll help you understand it in simple words.
+                Submit your specific inquiries regarding kernel modules, legacy port assignments, 
+                or memory-mapped I/O layers, and our desk will formulate a highly structured concept breakdown.
               </p>
             </div>
             <Link to="/ask-us" className="btn-primary">
-              Ask Us a Question <FaArrowRight size={13} />
+              Initiate Technical Inquiry <FaArrowRight size={13} />
             </Link>
           </div>
         </div>
