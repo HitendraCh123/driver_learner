@@ -32,14 +32,14 @@ function Home() {
 
         <div className="hero-inner container">
           <div className="hero-content">
-            <span className="hero-badge">● Educational Resource</span>
+            <span className="hero-badge">● Free Educational Resource</span>
             <h1 className="hero-title">
-              Learn Computer Drivers<br />
-              <span className="hero-highlight">the Simple Way</span>
+              Master Computer Drivers<br />
+              <span className="hero-highlight">The Easy Way</span>
             </h1>
             <p className="hero-desc">
-              Explore beginner-friendly information about printer, scanner, audio,
-              graphics, USB, network, Bluetooth, chipset, and other device driver topics.
+              Discover beginner-friendly tutorials and step-by-step guides on how printer, audio, 
+              graphics, scanner, network, Bluetooth, and chipset drivers connect your hardware to your PC.
             </p>
 
             {/* Search bar */}
@@ -47,7 +47,7 @@ function Home() {
               <FaSearch className="search-icon" size={15} />
               <input
                 type="text"
-                placeholder="Search driver topics..."
+                placeholder="Search driver topics (e.g., printer, audio)..."
                 value={searchText}
                 onChange={(e) => setSearchText(e.target.value)}
                 className="search-input"
@@ -58,10 +58,10 @@ function Home() {
             {/* CTA buttons */}
             <div className="hero-buttons">
               <Link to="/driver-topics" className="btn-primary">
-                Explore Driver Topics <FaArrowRight size={13} />
+                Explore Driver Guides <FaArrowRight size={13} />
               </Link>
               <Link to="/about" className="btn-outline-dark">
-                About Us
+                About Our Mission
               </Link>
             </div>
           </div>
@@ -76,7 +76,7 @@ function Home() {
               <div className="hero-stat-divider" />
               <div className="hero-stat-item">
                 <span className="hero-stat-num">Easy</span>
-                <span className="hero-stat-label">Learning Format</span>
+                <span className="hero-stat-label">Step-by-Step Format</span>
               </div>
               <div className="hero-stat-divider" />
               <div className="hero-stat-item">
@@ -85,9 +85,9 @@ function Home() {
               </div>
             </div>
             <div className="hero-card-features">
-              <div className="hero-feature"><FaCheckCircle color="#10b981" size={13} /> Simple beginner-friendly guides</div>
-              <div className="hero-feature"><FaCheckCircle color="#10b981" size={13} /> Organized by driver category</div>
-              <div className="hero-feature"><FaCheckCircle color="#10b981" size={13} /> Clear concepts, no jargon</div>
+              <div className="hero-feature"><FaCheckCircle color="#10b981" size={13} /> Simple, jargon-free explanations</div>
+              <div className="hero-feature"><FaCheckCircle color="#10b981" size={13} /> Fully organized hardware categories</div>
+              <div className="hero-feature"><FaCheckCircle color="#10b981" size={13} /> Perfect for beginners and tech students</div>
             </div>
           </div>
         </div>
@@ -112,10 +112,10 @@ function Home() {
       <section className="popular-section">
         <div className="container">
           <div className="section-header fade-in">
-            <span className="section-label">Popular Topics</span>
-            <h2 className="section-title">Popular driver learning guides</h2>
+            <span className="section-label">Most Viewed Categories</span>
+            <h2 className="section-title">Popular Driver Learning Guides</h2>
             <p className="section-desc">
-              Explore simple educational topics about printer, audio, scanner, and video drivers.
+              Start with our most-read introductory topics covering printer setups, sound settings, scanner connectivity, and display drivers.
             </p>
           </div>
 
@@ -130,7 +130,7 @@ function Home() {
                   <h3 className="popular-card-title">{driver.title}</h3>
                   <p className="popular-card-desc">{driver.shortDesc}</p>
                   <span className="popular-card-link">
-                    Explore Guide <FaArrowRight size={11} />
+                    Read Full Guide <FaArrowRight size={11} />
                   </span>
                 </Link>
               )
@@ -145,10 +145,10 @@ function Home() {
       <section className="all-drivers-section">
         <div className="container">
           <div className="section-header fade-in">
-            <span className="section-label">Driver topics learners explore most</span>
-            <h2 className="section-title">14+ Driver categories explained</h2>
+            <span className="section-label">Comprehensive Index</span>
+            <h2 className="section-title">14+ Complete Driver Categories Explained</h2>
             <p className="section-desc">
-              Browse all driver topics — from printer and audio to chipset and BIOS.
+              Browse through every essential device driver topic—from local USB peripherals to internal motherboard components and BIOS basics.
             </p>
           </div>
 
@@ -169,7 +169,7 @@ function Home() {
 
           <div className="drivers-cta fade-in">
             <Link to="/driver-topics" className="btn-primary">
-              View All Driver Topics <FaArrowRight size={13} />
+              View All Topics <FaArrowRight size={13} />
             </Link>
           </div>
         </div>
@@ -182,46 +182,45 @@ function Home() {
         <div className="container">
           <div className="stats-wrapper">
             <div className="stats-left fade-left">
-              <span className="section-label">About Driver Learner</span>
-              <h2 className="section-title">Driver learning made simple for everyone</h2>
+              <span className="section-label">Welcome To Driver Learner</span>
+              <h2 className="section-title">Making Computer Hardware Simple for Everyone</h2>
               <p className="section-desc">
-                Driver Learner is an educational platform built to explain how computer drivers work
-                behind everyday devices. Our guides focus on clear concepts, simple language, and
-                organized learning for users who want to understand device communication.
+                Driver Learner is an online educational portal dedicated to explaining how computers communicate with everyday devices. 
+                Our conceptual guides avoid complex programming terms to focus purely on helping you understand hardware basics.
               </p>
               <div className="about-features">
                 <div className="about-feature">
                   <div className="about-feature-icon">✓</div>
                   <div>
-                    <strong>Simple explanations</strong>
-                    <p>Easy guide format for driver basics</p>
+                    <strong>Plain English Explanations</strong>
+                    <p>Clear, easy-to-follow definitions for everyday learners.</p>
                   </div>
                 </div>
                 <div className="about-feature">
                   <div className="about-feature-icon">✓</div>
                   <div>
-                    <strong>Organized topics</strong>
-                    <p>Clean categories for faster learning</p>
+                    <strong>Structured Topic Flow</strong>
+                    <p>Logically grouped lessons to save you time and confusion.</p>
                   </div>
                 </div>
               </div>
               <Link to="/about" className="btn-primary" style={{ marginTop: '8px' }}>
-                More About Us <FaArrowRight size={13} />
+                Learn More About Us <FaArrowRight size={13} />
               </Link>
             </div>
 
             <div className="stats-right fade-right">
               <div className="stat-box">
                 <span className="stat-num">14+</span>
-                <span className="stat-label">Driver categories explained in simple words</span>
+                <span className="stat-label">Driver categories broken down in plain, simple text</span>
               </div>
               <div className="stat-box stat-box-blue">
                 <span className="stat-num">Easy</span>
-                <span className="stat-label">Beginner-friendly guides with clear topic flow</span>
+                <span className="stat-label">Beginner-focused curriculum with zero complex coding</span>
               </div>
               <div className="stat-box">
                 <span className="stat-num">10+</span>
-                <span className="stat-label">Printer, audio, USB, network, graphics and more</span>
+                <span className="stat-label">Hardware tutorials spanning audio, printers, networks & graphics</span>
               </div>
             </div>
           </div>
@@ -235,14 +234,13 @@ function Home() {
         <div className="container">
           <div className="faq-wrapper">
             <div className="faq-left fade-left">
-              <span className="section-label">Asked Questions</span>
-              <h2 className="section-title">Answers to common driver questions</h2>
+              <span className="section-label">Helpful Answers</span>
+              <h2 className="section-title">Answers to Common Driver Questions</h2>
               <p className="section-desc">
-                Find simple answers about computer drivers, hardware communication,
-                and common driver learning topics.
+                Find straightforward, quick answers to frequently asked questions about device communication and driver management.
               </p>
               <Link to="/ask-us" className="faq-ask-link">
-                Want to understand driver basics? <strong>Ask your question →</strong>
+                Curious about a specific hardware concept? <strong>Ask Your Question Here →</strong>
               </Link>
             </div>
 
@@ -273,11 +271,10 @@ function Home() {
       <section className="featured-section">
         <div className="container">
           <div className="section-header fade-in">
-            <span className="section-label">Driver learning topics</span>
-            <h2 className="section-title">Featured driver guides</h2>
+            <span className="section-label">Curated Lesson Plans</span>
+            <h2 className="section-title">Featured Device Driver Lessons</h2>
             <p className="section-desc">
-              Explore educational topics that explain how different computer drivers support
-              device communication and hardware behavior.
+              Explore curated educational overviews that dive a bit deeper into hardware roles, device tasks, and basic system behaviors.
             </p>
           </div>
 
@@ -307,7 +304,7 @@ function Home() {
                     ))}
                   </ul>
                   <Link to="/driver-topics" className="featured-link" style={{ color: driver.color }}>
-                    Explore Driver Guide <FaArrowRight size={11} />
+                    Explore This Category <FaArrowRight size={11} />
                   </Link>
                 </div>
               )
@@ -316,7 +313,7 @@ function Home() {
 
           <div className="featured-cta fade-in">
             <Link to="/driver-topics" className="btn-primary">
-              View All Driver Topics <FaArrowRight size={13} />
+              View All Driver Lessons <FaArrowRight size={13} />
             </Link>
           </div>
         </div>
@@ -330,13 +327,13 @@ function Home() {
           <div className="section-header-row fade-in">
             <div>
               <span className="section-label">Educational Blog</span>
-              <h2 className="section-title">Driver Insights & Ideas</h2>
+              <h2 className="section-title">Driver Insights & Informative Articles</h2>
               <p className="section-desc">
-                Simple articles about driver basics, hardware communication, and device learning topics.
+                Read interesting articles, troubleshooting concepts, and fundamental tips about computer peripherals.
               </p>
             </div>
             <Link to="/blog" className="see-all-link">
-              See all posts <FaArrowRight size={12} />
+              Read All Posts <FaArrowRight size={12} />
             </Link>
           </div>
 
@@ -356,7 +353,7 @@ function Home() {
                 <p className="blog-excerpt">{post.excerpt}</p>
                 <div className="blog-footer">
                   <span className="blog-read">{post.readTime}</span>
-                  <span className="blog-arrow">Read more ↗</span>
+                  <span className="blog-arrow">Read Article ↗</span>
                 </div>
               </Link>
             ))}
@@ -371,15 +368,15 @@ function Home() {
         <div className="container">
           <div className="cta-banner fade-in">
             <div className="cta-text">
-              <h2>Start learning driver basics today</h2>
-              <p>Explore all 14+ driver categories with simple, beginner-friendly educational guides.</p>
+              <h2>Start Learning Driver Basics Today</h2>
+              <p>Unlock our library of 14+ driver categories with simplified, easy-to-digest student guides.</p>
             </div>
             <div className="cta-buttons">
               <Link to="/driver-topics" className="btn-primary">
                 Explore Driver Topics <FaArrowRight size={13} />
               </Link>
               <Link to="/ask-us" className="cta-ask-link">
-                Ask a question →
+                Ask a Question →
               </Link>
             </div>
           </div>

@@ -1,14 +1,13 @@
 import { useState, useEffect } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { FaBars, FaTimes, FaEnvelope } from 'react-icons/fa'
-import logo from '../assets/logo.webp'
+import logo from '../assets/logo2.png'
 import './Navbar.css'
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
 
-  // Add shadow to navbar when user scrolls down
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 40)
@@ -25,35 +24,36 @@ function Navbar() {
 
         {/* Logo */}
         <Link to="/" className="navbar-logo" onClick={closeMenu}>
-          <div className="logo-icon"><img src={logo} alt="" /></div>
+          <div className="logo-icon"><img src={logo} alt="Driver Learner Logo" /></div>
           {/* <span className="logo-text">Driver<strong>Learner</strong></span> */}
         </Link>
 
-        {/* Desktop Nav Links */}
+        {/* Desktop & Mobile Nav Links */}
         <nav className={`navbar-links ${menuOpen ? 'open' : ''}`}>
           <NavLink to="/" end className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} onClick={closeMenu}>Home</NavLink>
-          <NavLink to="/about" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} onClick={closeMenu}>About</NavLink>
-          <NavLink to="/driver-topics" className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')} onClick={closeMenu}>Driver Topics</NavLink>
-          <NavLink to="/blog" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} onClick={closeMenu}>Blog</NavLink>
+          <NavLink to="/about" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} onClick={closeMenu}>About Us</NavLink>
+          <NavLink to="/driver-topics" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} onClick={closeMenu}>Driver Topics</NavLink>
+          <NavLink to="/blog" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} onClick={closeMenu}>Our Blog</NavLink>
+
 
           {/* Mobile only items */}
           <div className="mobile-extras">
-            <a href="mailto:info@driverlearner.com" className="nav-link">info@driverlearner.com</a>
-            <Link to="/ask-us" className="ask-us-btn" onClick={closeMenu}>Ask Us</Link>
+            <a href="mailto:support@yourdomain.com" className="nav-link">support@yourdomain.com</a>
+            <Link to="/ask-us" className="ask-us-btn" onClick={closeMenu}>Ask a Question</Link>
           </div>
         </nav>
 
         {/* Desktop Right Side */}
         <div className="navbar-right">
-          <a href="mailto:info@driverlearner.com" className="navbar-email">
+          <a href="mailto:support@yourdomain.com" className="navbar-email">
             <FaEnvelope size={13} />
-            info@driverlearner.com
+            support@yourdomain.com
           </a>
-          <Link to="/ask-us" className="ask-us-btn">Ask Us</Link>
+          <Link to="/ask-us" className="ask-us-btn">Ask a Question</Link>
         </div>
 
         {/* Mobile hamburger button */}
-        <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">
+        <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle navigation menu">
           {menuOpen ? <FaTimes size={20} /> : <FaBars size={20} />}
         </button>
       </div>
