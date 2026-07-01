@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { FaEnvelope, FaArrowRight } from 'react-icons/fa'
-import logo from '../assets/logo.webp'
+import logo from '../assets/logo2.png'
 import './Footer.css'
 
 function Footer() {
@@ -11,31 +11,31 @@ function Footer() {
         {/* Brand column */}
         <div className="footer-brand">
           <Link to="/" className="footer-logo">
-            <div className="footer-logo-icon"><img src={logo} alt="" /></div>
+            <div className="footer-logo-icon"><img src={logo} alt="Driver Learner Logo" /></div>
             {/* <span>Driver<strong>Learner</strong></span> */}
           </Link>
           <p className="footer-tagline">
-            Learn computer drivers in a simple way. Educational guides about software drivers,
-            hardware communication, and device-related learning topics.
+            Understanding computer drivers doesn't have to be hard. We offer friendly, easy-to-read 
+            guides to help you learn exactly how your devices talk to your computer.
           </p>
-          <a href="mailto:info@driverlearner.com" className="footer-email">
+          <a href="mailto:support@yourdomain.com" className="footer-email">
             <FaEnvelope size={13} />
-            info@driverlearner.com
+            support@yourdomain.com
           </a>
           <Link to="/driver-topics" className="footer-explore-btn">
-            Explore Driver Topics <FaArrowRight size={12} />
+            Start Learning <FaArrowRight size={12} />
           </Link>
         </div>
 
         {/* Quick Links */}
         <div className="footer-col">
-          <h4>Quick Links</h4>
+          <h4>Useful Links</h4>
           <ul>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/driver-topics">Driver Topics</Link></li>
-            <li><Link to="/blog">Blog</Link></li>
+            <li><Link to="/blog">Our Blog</Link></li>
             <li><Link to="/about">About Us</Link></li>
-            <li><Link to="/ask-us">Ask Us</Link></li>
+            <li><Link to="/ask-us">Ask a Question</Link></li>
           </ul>
         </div>
 
@@ -46,7 +46,6 @@ function Footer() {
             <li><Link to="/driver-topics">Printer Drivers</Link></li>
             <li><Link to="/driver-topics">Audio Drivers</Link></li>
             <li><Link to="/driver-topics">Scanner Drivers</Link></li>
-            <li><Link to="/driver-topics">Audio & Video Drivers</Link></li>
             <li><Link to="/driver-topics">Graphics Drivers</Link></li>
             <li><Link to="/driver-topics">Network Drivers</Link></li>
             <li><Link to="/driver-topics">USB Drivers</Link></li>
@@ -55,7 +54,7 @@ function Footer() {
 
         {/* Legal */}
         <div className="footer-col">
-          <h4>Legal</h4>
+          <h4>Legal Info</h4>
           <ul>
             <li><Link to="/about">Privacy Policy</Link></li>
             <li><Link to="/about">Terms & Conditions</Link></li>
@@ -70,7 +69,7 @@ function Footer() {
         <div className="container footer-bottom-inner">
           <p>© 2026 Driver Learner. All rights reserved.</p>
           <Link to="/driver-topics" className="footer-bottom-link">
-            Explore Driver Guides <FaArrowRight size={11} />
+            See All Guides <FaArrowRight size={11} />
           </Link>
         </div>
       </div>
@@ -78,4 +77,4 @@ function Footer() {
   )
 }
 
-export default Footer
+export default Footer;

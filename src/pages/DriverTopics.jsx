@@ -19,14 +19,14 @@ function DriverTopics() {
       d.category.toLowerCase().includes(searchText.toLowerCase()),
   )
 
-  const toggleCard = (id) => {
-    setOpenCards((prev) => {
-      const next = new Set(prev)
-      if (next.has(id)) next.delete(id)
-      else next.add(id)
-      return next
-    })
-  }
+  // const toggleCard = (id) => {
+  //   setOpenCards((prev) => {
+  //     const next = new Set(prev)
+  //     if (next.has(id)) next.delete(id)
+  //     else next.add(id)
+  //     return next
+  //   })
+  // }
 
   return (
     <main className="topics-page">
@@ -115,7 +115,7 @@ function DriverTopics() {
                     {/* Card Header — click to toggle expand/collapse */}
                     <div
                       className="driver-card-header"
-                      onClick={() => toggleCard(driver.id)}
+                      // onClick={() => toggleCard(driver.id)}
                       role="button"
                       tabIndex={0}
                       onKeyDown={(e) => e.key === 'Enter' && toggleCard(driver.id)}
@@ -130,10 +130,10 @@ function DriverTopics() {
                         </span>
                         <h3 className="driver-card-title">{driver.title}</h3>
                       </div>
-                      <FaChevronDown
+                      {/* <FaChevronDown
                         size={14}
                         className={`driver-card-chevron ${isOpen ? 'rotated' : ''}`}
-                      />
+                      /> */}
                     </div>
 
                     {/* Card Body — already open on page load */}
