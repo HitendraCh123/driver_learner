@@ -40,7 +40,6 @@ function AskUs() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    // In a real project, you would send this to a backend
     setSubmitted(true)
   }
 
@@ -60,11 +59,11 @@ function AskUs() {
             Contact Us
           </span>
           <h1 className="page-hero-title">
-            Ask Us <span className="page-hero-highlight">Anything</span>
+            We're here to <span className="page-hero-highlight">help</span>
           </h1>
           <p className="page-hero-desc">
-            Have a question about computer drivers or device communication? Send us your question
-            and we'll help you understand it in simple, clear words.
+            Confused about how your devices talk to your computer? Send us your question 
+            and we'll give you a simple, clear answer that’s easy to understand.
           </p>
         </div>
       </section>
@@ -77,11 +76,10 @@ function AskUs() {
             {/* Left — Info side */}
             <div className="askus-info fade-left">
               <span className="section-label">Get In Touch</span>
-              <h2 className="section-title">We're here to help you learn</h2>
+              <h2 className="section-title">Let’s clear things up</h2>
               <p className="section-desc">
-                Our team is dedicated to making driver education simple. Whether you have a
-                question about a specific driver type or want to understand device communication
-                basics, we're ready to help.
+                We love helping people learn about their tech. If you have a question about 
+                a driver or just want to know how your device works, we are here for you.
               </p>
 
               <div className="contact-info-cards">
@@ -91,7 +89,7 @@ function AskUs() {
                   </div>
                   <div>
                     <strong>Email Us</strong>
-                    <a href="mailto:info@driverlearner.com">info@driverlearner.com</a>
+                    <a href="mailto:support@yourdomain.com">support@yourdomain.com</a>
                   </div>
                 </div>
               </div>
@@ -99,15 +97,15 @@ function AskUs() {
               <div className="askus-features">
                 <div className="askus-feature">
                   <FaCheckCircle size={15} color="#10b981" />
-                  <span>Simple answers to driver questions</span>
+                  <span>Friendly, simple answers</span>
                 </div>
                 <div className="askus-feature">
                   <FaCheckCircle size={15} color="#10b981" />
-                  <span>Educational guidance on all 14+ topics</span>
+                  <span>Help with all device types</span>
                 </div>
                 <div className="askus-feature">
                   <FaCheckCircle size={15} color="#10b981" />
-                  <span>Clear and jargon-free explanations</span>
+                  <span>No confusing technical talk</span>
                 </div>
                 <div className="askus-feature">
                   <FaCheckCircle size={15} color="#10b981" />
@@ -123,10 +121,10 @@ function AskUs() {
                   <div className="success-icon">
                     <FaCheckCircle size={40} color="#10b981" />
                   </div>
-                  <h3>Question Submitted!</h3>
+                  <h3>Message Sent!</h3>
                   <p>
-                    Thank you for reaching out. We've received your question and will get
-                    back to you with a simple, clear answer soon.
+                    Thanks for asking! We’ve got your question and we'll reply soon 
+                    with a clear and helpful answer.
                   </p>
                   <button className="reset-btn" onClick={() => { setSubmitted(false); setForm({ name: '', email: '', topic: '', message: '' }) }}>
                     Ask Another Question
@@ -134,8 +132,8 @@ function AskUs() {
                 </div>
               ) : (
                 <form className="askus-form" onSubmit={handleSubmit}>
-                  <h3 className="form-title">Send Your Question</h3>
-                  <p className="form-subtitle">Fill in the details below and we'll respond with a clear educational answer.</p>
+                  <h3 className="form-title">Send a Question</h3>
+                  <p className="form-subtitle">Fill out the form below and we'll get back to you with the answer.</p>
 
                   <div className="form-row">
                     <div className="form-group">
@@ -144,7 +142,7 @@ function AskUs() {
                         type="text"
                         id="name"
                         name="name"
-                        placeholder="John Smith"
+                        placeholder="Your Name"
                         value={form.name}
                         onChange={handleChange}
                         required
@@ -156,7 +154,7 @@ function AskUs() {
                         type="email"
                         id="email"
                         name="email"
-                        placeholder="john@example.com"
+                        placeholder="you@email.com"
                         value={form.email}
                         onChange={handleChange}
                         required
@@ -165,7 +163,7 @@ function AskUs() {
                   </div>
 
                   <div className="form-group">
-                    <label htmlFor="topic">Driver Topic</label>
+                    <label htmlFor="topic">What's your question about?</label>
                     <select
                       id="topic"
                       name="topic"
@@ -173,7 +171,7 @@ function AskUs() {
                       onChange={handleChange}
                       required
                     >
-                      <option value="">Select a driver topic...</option>
+                      <option value="">Choose a topic...</option>
                       {contactTopics.map((t) => (
                         <option key={t} value={t}>{t}</option>
                       ))}
@@ -185,7 +183,7 @@ function AskUs() {
                     <textarea
                       id="message"
                       name="message"
-                      placeholder="Type your driver question here. Be as specific as you like and we'll explain it in simple terms..."
+                      placeholder="Ask us anything! Don't worry about being perfect, just tell us what's on your mind."
                       rows={5}
                       value={form.message}
                       onChange={handleChange}
@@ -209,9 +207,9 @@ function AskUs() {
         <div className="container">
           <div className="section-header fade-in">
             <span className="section-label">Quick Answers</span>
-            <h2 className="section-title">Common driver questions answered</h2>
+            <h2 className="section-title">Common questions</h2>
             <p className="section-desc">
-              Find quick answers to the most commonly asked driver learning questions below.
+              Here are the answers to the questions we get asked the most.
             </p>
           </div>
 
